@@ -1,0 +1,15 @@
+/*Create a driver class to instantiate and print a pair of dice.*/
+public class CreatePairOfDice {
+    public static void main(String[ ] args){
+    Die die1, die2;
+    die1 = new Die();
+    int randnum1 = (1+(int)(Math.random()*6));
+    die1.setValue(randnum1);
+    System.out.println("Die 1"); 
+    die1.printDie();
+    die2 = new Die();
+    int randnum2 = (1+(int)(Math.random()*6)); 
+    die2.setValue(randnum2);
+    System.out.println("Die 2"); 
+    die2.printDie();
+}}
